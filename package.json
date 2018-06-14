@@ -19,13 +19,15 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "dependencies": {
-    "express": ">= 3.0.0",
     "csv": ">= 0.2.1",
+    "express": "^3.0.0",
+    "morgan": "^1.7.0",
+    "newrelic": "^1.28.1",
     "open": ">= 0.0.2",
     "testacular": "canary"
   },
   "engines": {
-    "node": ">= 0.8.4"
+    "node": "~0.8.4"
   },
   "license": "MIT"
 }
