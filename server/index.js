@@ -36,7 +36,7 @@ exports.start = function(PORT, STATIC_DIR, DATA_FILE, TEST_DIR) {
   app.use(express.static(STATIC_DIR));
 
   // create application/json parser
-  var jsonParser = bodyParser.json();;
+  var jsonParser = bodyParser.json();
 
   // API
   app.get(API_URL, function(req, res, next) {
@@ -55,7 +55,7 @@ exports.start = function(PORT, STATIC_DIR, DATA_FILE, TEST_DIR) {
     return res.send(400, {error: errors});
   });
 
-  app.post(API_URL_ORDER, function(req, res, next) {
+  app.post(API_URL_ORDER, jsonParser, function(req, res, next) {
     logger.info(req.body, 'checkout');
     return res.send(201, { orderId: Date.now()});
   });
