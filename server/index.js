@@ -1,3 +1,6 @@
+// Uncomment after adding New Relic agent to project
+// const newrelic = require('newrelic');
+
 const express = require('express');
 const logger = require('pino')();
 const morgan = require('morgan');
@@ -57,6 +60,26 @@ exports.start = function(PORT, STATIC_DIR, DATA_FILE, TEST_DIR) {
 
   app.post(API_URL_ORDER, jsonParser, function(req, res, next) {
     logger.info(req.body, 'checkout');
+
+    /*************************************
+    /*         Custom attributes         *
+    /*************************************
+    var order = req.body;
+    var itemCount = 0;
+    var orderTotal = 0;
+    order.items.forEach(function(item) { 
+      itemCount += item.qty;
+      orderTotal += item.price * item.qty;
+    });
+    
+    newrelic.addCustomAttributes({
+      'customer': order.deliverTo.name,
+      'restaurant': order.restaurant.name,
+      'itemCount': itemCount,
+      'orderTotal': orderTotal
+    });
+    /*************************************/
+
     return res.send(201, { orderId: Date.now()});
   });
 
