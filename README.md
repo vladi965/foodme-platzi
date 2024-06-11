@@ -13,7 +13,7 @@ Remember: This challenge is meant for developers of all levels, and some of the 
 - The application must have some design changes from the original application (colors, font, photos for example).
 - The application cannot accept American Express cards.
 - You must use GitHub Copilot to help you build the application.
-- You must instrument your application with New Relic with Browser Monitoring and APM.
+- You must instrument your application with New Relic using the Browser Monitoring Guided Install and the Node.js Guided Install.
 
 ## Bonus tasks
 - Throughout the challenge, [Rita](https://www.linkedin.com/in/rita-hill/) will appear with bonus tasks for the challenge. These are not required to complete the challenge, but we encourage you to give them a try.
