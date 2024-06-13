@@ -32,3 +32,8 @@ More information about this application [here](http://goo.gl/Xa0Ea)
 
 The app is build on top of [angular-seed](http://github.com/angular/angular-seed),
 check out seed's README to understand what the scripts under `scripts/` are doing.
+
+## Bonus tasks
+**13 June 2024** - Last year I went ot Bogotà, Colombia for the first time and I learned about Rappi 🛵, a food delivery service app that brought all of the delicious Colombian food that I wanted to my apartment. I used Rappi because while I don't speak a lot of Spanish, I know my numbers very well, so giving them the code to confirm my identity was easy. I ordered empanadas almost everyday, and ate my empanadas with the best coffee I had in Colombia from Libertario.
+
+For your first bonus task, I want you to add a restaurant to your application that sells coffee and empanadas!
