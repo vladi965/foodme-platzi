@@ -37,3 +37,7 @@ check out seed's README to understand what the scripts under `scripts/` are doin
 **13 June 2024** - Last year I went ot Bogotà, Colombia for the first time and I learned about Rappi 🛵, a food delivery service app that brought all of the delicious Colombian food that I wanted to my apartment. I used Rappi because while I don't speak a lot of Spanish, I know my numbers very well, so giving them the code to confirm my identity was easy. I ordered empanadas almost everyday, and ate my empanadas with the best coffee I had in Colombia from Libertario.
 
 For your first bonus task, I want you to add a restaurant to your application that sells coffee and empanadas!
+
+** 26 June 2024** - Two years ago, I went to Mexico City, and on my first day in the city, I visited Cafebrería El Péndulo. It was the largest bookstore I had ever seen! My friend, who was Mexican, showed me many books by different Spanish speaking poets that she loved. We spent an hour looking at the books before having lunch on the top floor.
+
+For your next bonus task, I want you to create your own Cafebrería, and name each food item on the menu after a book from a Spanish speaking writer.
