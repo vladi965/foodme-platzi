@@ -5,8 +5,8 @@ var foodMeApp = angular.module("foodMeApp", ["ngResource"]);
 foodMeApp.config(function ($routeProvider) {
   $routeProvider
     .when("/", {
-      templateUrl: "views/customer.html",
       controller: "CustomerController",
+      templateUrl: "views/customer.html",
     })
     .when("/restaurants", {
       controller: "RestaurantsController",

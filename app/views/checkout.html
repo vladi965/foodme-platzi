@@ -25,11 +25,11 @@
   <div class="d-flex align-items-center justify-content-between gap-4">
     <div>
       <div class="fm-panel w-75">
-        <div class="d-flex align-items-center gap-3 mb-2">
+        <div class="d-flex align-items-center gap-2 mb-2">
           <h5>Deliver To:</h5>
           <span>{{customer.name}}</span>
         </div>
-        <div class="d-flex align-items-center gap-3">
+        <div class="d-flex align-items-center gap-2">
           <h5>Delivery address:</h5>
           <span>{{customer.address}}</span>
         </div>
@@ -74,7 +74,6 @@
                   name="radio"
                   ng-model="cart.payment.type"
                   value="american express"
-                  disabled
                 />
                 <div class="cart-image">
                   <img
@@ -116,7 +115,7 @@
                   Invalid card Number
                 </span>
               </div>
-              <div class="d-flex flex-column w-auto">
+              <div class="d-flex flex-column w-25">
                 <span>Expiration date</span>
                 <input
                   class="mt-2 box-card-payment"
@@ -130,7 +129,7 @@
                   ng-model="cart.payment.expire"
                 />
               </div>
-              <div class="d-flex flex-column w-auto">
+              <div class="d-flex flex-column w-25">
                 <span>CVC</span>
                 <input
                   class="mt-2 box-card-payment"

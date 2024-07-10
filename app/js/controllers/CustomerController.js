@@ -2,7 +2,13 @@
 
 foodMeApp.controller(
   "CustomerController",
-  function CustomerController($scope, customer, $location, $timeout) {
+  function CustomerController(
+    $scope,
+    customer,
+    $location,
+    $timeout,
+    AuthService
+  ) {
     $scope.customerName = customer.name;
     $scope.customerAddress = customer.address;
 
@@ -10,7 +16,8 @@ foodMeApp.controller(
       customer.name = customerName;
       customer.address = customerAddress;
 
-      /* $location.url("/restaurants"); */
+      //Logica de inicio de sesión
+      AuthService.login();
 
       //Cerrar el modal
       $timeout(function () {
@@ -31,7 +38,6 @@ foodMeApp.controller(
         $timeout(function () {
           window.location.reload();
         }, 100);
-        /* $scope.$apply(); */
       }, 100); // El tiempo
     };
   }

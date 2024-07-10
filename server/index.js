@@ -1,6 +1,10 @@
 // Uncomment after adding New Relic agent to project
-// const newrelic = require('newrelic');
+//const newrelic = require('newrelic');
 
+// module loaded before newrelic
+const expressModule = require("express");
+// load the agent
+const newrelic = require("newrelic");
 const express = require("express");
 const logger = require("pino")();
 const morgan = require("morgan");
@@ -15,6 +19,12 @@ const MemoryStorage = require("./storage").Memory;
 const API_URL = "/api/restaurant";
 const API_URL_ID = API_URL + "/:id";
 const API_URL_ORDER = "/api/order";
+
+// instrument express after the agent has been loaded
+newrelic.instrumentLoadedModule(
+  "express", // the module's name, as a string
+  expressModule // the module instance
+);
 
 var removeMenuItems = function (restaurant) {
   var clone = {};
